@@ -3,7 +3,7 @@
  * кнопки скрытия/показа колонки в мобильной версии сайта
  * и за кнопки меню
  * */
-  class Sidebar {
+ class Sidebar {
   /**
    * Запускает initAuthLinks и initToggleButton
    * */

@@ -2,14 +2,14 @@
  * Класс CreateTransactionForm управляет формой
  * создания новой транзакции
  * */
-class CreateTransactionForm extends AsyncForm {
+ class CreateTransactionForm extends AsyncForm {
   /**
    * Вызывает родительский конструктор и
    * метод renderAccountsList
    * */
   constructor(element) {
-    super(element);
-    this.renderAccountsList();
+    super(element)
+    this.renderAccountsList()
   }
 
   /**
@@ -24,7 +24,7 @@ class CreateTransactionForm extends AsyncForm {
           this.element.querySelector('.accounts-select').innerHTML += `<option value="${item.id}">${item.name}</option>`;
         });
       }
-    });
+    })
   }
 
   /**

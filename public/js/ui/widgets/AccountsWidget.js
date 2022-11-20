@@ -20,7 +20,8 @@
       this.element = element;
       this.registerEvents();
       this.update();
-    } 
+    }
+    
   }
 
   /**
@@ -111,6 +112,6 @@
    * и добавляет его внутрь элемента виджета
    * */
   renderItem(data){
-    this.element.innerHTML += this.getAccountHTML(data);
+    this.element.innerHTML += this.getAccountHTML(data)
   }
 }

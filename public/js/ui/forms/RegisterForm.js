@@ -2,7 +2,7 @@
  * Класс RegisterForm управляет формой
  * регистрации
  * */
-class RegisterForm extends AsyncForm {
+ class RegisterForm extends AsyncForm {
   /**
    * Производит регистрацию с помощью User.register
    * После успешной регистрации устанавливает
@@ -16,6 +16,6 @@ class RegisterForm extends AsyncForm {
         App.setState('user-logged');
         App.getModal('register').close();
       }
-    });
+    })
   }
 }

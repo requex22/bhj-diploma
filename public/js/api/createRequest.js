@@ -2,7 +2,8 @@
  * Основная функция для совершения запросов
  * на сервер.
  * */
-const createRequest = (options = {}) => {
+
+ const createRequest = (options = {}) => {
     const xhr = new XMLHttpRequest();
     xhr.responseType = 'json';
     let url = options.url;
@@ -24,15 +25,17 @@ const createRequest = (options = {}) => {
         }
 
         xhr.send(formData);
-    } else {
+    }
+    else{
         xhr.send();
     }
 
     xhr.onload = () => {
         if (!xhr.response.error){
             options.callback(null, xhr.response)
-        } else {
+        }
+        else{
             options.callback(new Error(xhr.response.error))
         }
     }
-};
+}

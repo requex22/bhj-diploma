@@ -2,7 +2,7 @@
  * Класс LoginForm управляет формой
  * входа в портал
  * */
-class LoginForm extends AsyncForm {
+ class LoginForm extends AsyncForm {
   /**
    * Производит авторизацию с помощью User.login
    * После успешной авторизации, сбрасывает форму,
@@ -16,6 +16,6 @@ class LoginForm extends AsyncForm {
         App.setState('user-logged');
         App.getModal('login').close()
       }
-    }); 
+    })
   }
 }

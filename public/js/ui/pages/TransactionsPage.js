@@ -22,7 +22,7 @@
    * Вызывает метод render для отрисовки страницы
    * */
   update() {
-    this.render()
+    this.render(this.lastOptions);
   }
 
   /**
